@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+  <title>Education Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <script src="js/eduvalidation.js"></script>
+</head>
+<body onload="document.registration.hscin.focus();">
+  <div class="container">
+    <div class="header">
+      <h2>education Form</h2>
+    </div>
+    <form class="form" name='registration' id="form" onSubmit="return formValidation();">
+      <div class="form-control error">
+        <label class="required" for="hscin">HSC Institution Name</label>
+        <input class="inputt" type="text" name="hscin"  placeholder="HSC Institution" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="hscb">HSC Board (i.e CBSE,ICSE or State board)</label>
+        <input class="inputt" type="text" name="hscb"  placeholder="HSC Board" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="hscp">Score in SSC in %</label>
+        <input class="inputt" type="number" name="hscp"  placeholder="HSC percentage" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="sscin">SSC Institution Name</label>
+        <input class="inputt" type="text" name="sscin"  placeholder="SSC Institution" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="sscb">SSC Board (i.e CBSE,ICSE or State board)</label>
+        <input class="inputt" type="text" name="sscb"  placeholder="SSC Board" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="sscp">Score in SSC in %</label>
+        <input class="inputt" type="number" name="sscp"  placeholder="SSC percentage" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="cp">Currently Persuing</label>
+        <input class="inputt" type="text" name="cp"  placeholder="HSC Board" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="">Current educational Institution Name</label>
+        <input class="inputt" type="text" name="cein"  placeholder="Current educational Institution Name" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="cein">Overall Percentage</label>
+        <input class="inputt" type="number" name="op"  placeholder="Overall Percentage" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="cb">Current backlogs if any!!</label>
+        <input class="inputt" type="number" name="cb"  placeholder="no of backlogs" autocomplete="off">
+      </div>
+      <a href="documents.html">
+        <input type="submit" name="submit" value="Submit" class="btn">
+      </a>
+    </form>
+  </div>
+</body>
+
+</html>

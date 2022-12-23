@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+  <title>Registraion Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+    <script src="docuvalidation.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Document Form</h2>
+    </div>
+    <form class="form" id="form">
+      <div class="form-control">
+        <label class="required" for="">Recent Passport size photo</label>
+        <input class="inputt" type="file" name="file" id="file"  placeholder="" accept="application/*, image/jpeg ,image/x-png" autocomplete="off">
+      </div>
+      <div class="form-control">
+        <label class="required" for="">HSC mark sheet</label>
+        <input class="inputt" type="file" name="file1" id="file1" placeholder="" accept="application/*, image/jpeg ,image/x-png " autocomplete="off">
+      </div>
+      <div class="form-control">
+        <label class="required" for="">SSC mark sheet</label>
+        <input class="inputt" type="file" name="file2" id="file2" placeholder="" accept="application/* , image/jpeg ,image/x-png" autocomplete="off">
+      </div>
+      <div class="form-control">
+        <label class="required" for="">All semesters mark sheet in a single PDF or docs</label>
+        <input class="inputt" type="file" name="filey" id="filey" placeholder="" accept="application/*" autocomplete="off">
+      </div>
+      <input type="submit" name="" value="Submit" class="btn">
+    </form>
+  </div>
+</body>
+</html>

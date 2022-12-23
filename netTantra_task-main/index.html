@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+  <title>Initial Registraion Form</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <script src="indexvalidation.js"></script>
+</head>
+
+<body onload="document.registration.username.focus();">
+  <div class="container"> 
+    <div class="header">
+      <h2>Multi page Registration Form</h2>
+    </div>
+    <form class="form" id="form" name='registration' onSubmit="return formValidation();">
+      <div class="form-control">
+        <label class="required" for="username">Name</label>
+        <div class="inputy">
+          <input type="text" name="username" placeholder="First" style="width:30em" autocomplete="off">
+          <small>......</small>
+          <input type="text" name="username" placeholder="Second" style="width:30em" autocomplete="off">
+        </div>
+      </div>
+      <div class="form-control error">
+        <label class="required" for="dob">Date of Birth</label>
+        <input class="inputt" type="date" name="dob" placeholder="MM/DD/YYYY">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="email">Email</label>
+        <input class="inputt" type="email" name="email" placeholder="Email" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="username">Father's name</label>
+        <div class="inputy">
+          <input type="text" name="username" placeholder="First" style="width:30em" autocomplete="off">
+          <small>......</small>
+          <input type="text" name="username" placeholder="Second" style="width:30em" autocomplete="off">
+        </div>
+      </div>
+      <div class="form-control error">
+        <label class="required" for="username">Mother's name</label>
+        <div class="inputy">
+          <input type="text" name="username" placeholder="First" style="width:30em" autocomplete="off">
+          <small>......</small>
+          <input type="text" name="username" placeholder="Second" style="width:30em" autocomplete="off">
+        </div>
+      </div>
+      <div class="form-control error">
+        <label class="required" for="gender">Gender</label><br>
+        <input class="gender" type="radio" name="msex" value="male">M <br>
+        <input class="gender" type="radio" name="fsex" value="female">F
+      </div>
+      <div class="form-control error">
+        <label class="required" for="nationality">Nationality</label>
+        <input class="inputt" type="text" name="nationality" placeholder="Nationality" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="address">Home Address</label>
+        <input class="inputt" type="text" name="address" placeholder="Street Address" autocomplete="off">
+        <br>
+        <div class="inputy">
+          <input type="text" name="city" placeholder="City" style="width:30em" autocomplete="off">
+          <small>......</small>
+          <input type="text" name="country" placeholder="Country" style="width:30em" autocomplete="off">
+        </div>
+      </div>
+      <div class="form-control error">
+        <label class="required" for="tphone">Telephone - Home</label>
+        <input class="inputt" type="number" name="tphone" placeholder="### ### ####" autocomplete="off">
+      </div>
+      <div class="form-control error">
+        <label class="required" for="tphone">Telephone - Mobile</label>
+        <input class="inputt" type="number" name="tphone" placeholder="### ### ####" autocomplete="off">
+      </div>
+      <a href="./education.html">
+        <input type="submit" name="submit" value="Submit" class="btn">
+      </a>
+    </form>
+  </div>
+</body>
+</html>
